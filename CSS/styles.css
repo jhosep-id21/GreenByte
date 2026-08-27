@@ -1,3 +1,39 @@
-.container-fluid{
-    background-color: #5d94f9;
+.container-fluid {
+    background: linear-gradient(to right, #0a3c20, #000000);
+}
+
+body {
+    background-color: #121E17;
+    color: #ffffff;
+}
+
+.navbar-custom {
+    background-color: #1A241D;
+    border-bottom: 2px solid #2ECC71;
+}
+
+.brand-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.brand-title span {
+    color: #2ECC71;
+}
+
+/*Nav para categorias*/
+.nav-categories {
+    background-color: #0e1812;
+    border-bottom: 2px solid var(--gb-accent);
+}
+
+.nav-categories .nav-link {
+    color: #e0e0e0;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+}
+
+.nav-categories .nav-link:hover {
+    color: var(--gb-accent);
 }
