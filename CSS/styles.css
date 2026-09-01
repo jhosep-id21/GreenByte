@@ -1,7 +1,7 @@
 :root {
     --gb-accent: #2ECC71;
 }
-.container-fluid {
+.contenedor-uno {
     background: linear-gradient(to right, #0a3c20, #000000);
 }
 
