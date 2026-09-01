@@ -23,15 +23,15 @@
             <div class="container-fluid contenedor-uno">
 
                 <!-- aquí va el logo de la empresa y nombre -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="IMG/iconos/ico-greenbyte-sinfondo.png" alt="" width="120" height="120">
                     <span class="brand-title">Green<span>Byte</span></span>
                 </a>
                 <!-- esto es para convertir el logo en un tipo botón-->
-                <button href="#carousel-greenbyte" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" href="#carousel-greenbyte"></span>
+                    <span class="navbar-toggler-icon" href="#carousel-greenbyte-plantas"></span>
                 </button>
                 <!-- a partir de aquí viene el menú para navegar-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,11 +39,11 @@
                         <!--Primera referencia para inicio-->
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page"
-                                href="#carousel-greenbyte">Inicio</a>
+                                href="#carousel-greenbyte-plantas">Inicio</a>
                         </li>
                         <!--segunda referencia para contactanos-->
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contactanos</a>
+                            <a class="nav-link text-white" href="contactanos.html">Contactanos</a>
                         </li>
                         <!-- esto es un pequeño nav seleccionable como desplegable-->
                         <li class="nav-item dropdown">
@@ -59,7 +59,7 @@
                         </li>
                         <!--y este es la referencia para el registro-->
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Iniciar Sesión / Registrate</a>
+                            <a class="btn btn-primary" btn btn-outline-light ms-2 data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Iniciar Sesión</a>
                         </li>
                     </ul>
                     <!-- este es el form para la barra de búsqueda-->
@@ -164,7 +164,32 @@
         </div>
 
     </main>
-
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-success">
+                <div class="modal-header border-success">
+                    <h5 class="modal-title">Iniciar Sesión - GreenByte</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-login">
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="admin@greenbyte.com"
+                                required>
+                            <div class="form-text text-muted">Usa <b>admin@greenbyte.com</b> para probar el rol de
+                                administrador.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--los derechos po-->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
